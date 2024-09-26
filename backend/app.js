@@ -9,7 +9,7 @@ const expenseRoutes=require('./routes/expense');
 
 const mongoose = require("mongoose");
 //'mongodb+srv://jaisprabhu1:<db_password>@cluster0.jhnjk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-mongoose.connect('mongodb+srv://jaisprabhu1:R8kJDMBORZKt5Fza@cluster0.jhnjk.mongodb.net/expenseTracker')
+mongoose.connect('mongodb+srv://jaisprabhu1:R8kJDMBORZKt5Fza@cluster0.jhnjk.mongodb.net/expenseTracker?retryWrites=true&w=majority&appName=Cluster0'')
 .then(()=>{
   console.log("Connected to database");
 })
